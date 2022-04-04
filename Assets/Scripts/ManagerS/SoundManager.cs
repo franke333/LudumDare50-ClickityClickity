@@ -12,8 +12,20 @@ public class SoundManager : MonoBehaviour
     }
 
     [SerializeField]
-    AudioSource hit, upgrade, explosion, ice, shoot, electro;
-
+    AudioSource hit, upgrade, explosion, ice, shoot, electro,soundtrack;
+    public void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.M))
+        {
+            hit.mute = !hit.mute;
+            upgrade.mute = !upgrade.mute;
+            explosion.mute = !explosion.mute;
+            ice.mute = !ice.mute;
+            shoot.mute = !shoot.mute;
+            electro.mute = !electro.mute;
+            soundtrack.mute = !soundtrack.mute;
+        }
+    }
     public void PlayHit()
     {
         hit.Play();

@@ -4983,6 +4983,7 @@ MonoBehaviour:
   ice: {fileID: 1887901278}
   shoot: {fileID: 1887901277}
   electro: {fileID: 1887901283}
+  soundtrack: {fileID: 1887901284}
 --- !u!4 &1887901282
 Transform:
   m_ObjectHideFlags: 0
